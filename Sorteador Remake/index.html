@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorteador de Números</title>
+  <link rel="stylesheet" href="sort.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sorteador de Números</h1>
+    <div class="form-group">
+      <label for="range-min">Número mínimo:</label>
+      <input type="number" id="range-min" value="0">
+    </div>
+    <div class="form-group">
+      <label for="range-max">Número máximo:</label>
+      <input type="number" id="range-max" value="10">
+    </div>
+    <div class="form-group">
+      <label for="sorteio-nome">Nome do Sorteio (opcional):</label>
+      <input type="text" id="sorteio-nome" placeholder="Ex: Sorteio de um prêmio">
+    </div>
+    <button id="sortear-btn">Sortear</button>
+    <button id="reset-btn" class="reset-btn">Resetar</button>
+    <div class="result" id="result"></div>
+    <div class="history">
+      <h3>Histórico de números sorteados</h3>
+      <ul id="history-list" class="history-list"></ul>
+      <button id="export-btn" class="export-btn">Exportar Histórico</button>
+    </div>
+  </div>
+  <script src="sort.js"></script>
+</body>
+</html>
